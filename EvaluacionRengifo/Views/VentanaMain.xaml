@@ -12,7 +12,13 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
         <Label Text="{Binding StringFormat='El chiste de la hora {0:T} es :'}" />
-        
+
+        <Label x:Name="joke"
+               Text="Click the Button above"
+               FontSize="18"
+               VerticalOptions="Center"
+               HorizontalOptions="Center" />
+
         <Button Text="Chiste de Chuck :D"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"

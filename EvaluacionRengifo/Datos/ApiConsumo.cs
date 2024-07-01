@@ -20,16 +20,5 @@ namespace EvaluacionRengifo.Datos
         public UrlWebViewSource? url {  get; set; }
         public string? joke { get; set; }
      
-
-        
-
-
-
-        public void showJoke(Label _chiste,Button _action) {
-
-            this.joke = "teste";
-
-            
-        }
     }
 }

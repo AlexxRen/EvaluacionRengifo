@@ -10,12 +10,12 @@ namespace EvaluacionRengifo.Views
 {
     internal class Consumidor :ApiConsumo
     {
-        public class RestService
+        public class RestService:ApiConsumo
         {
             HttpClient _client;
             JsonSerializerOptions _serializerOptions;
 
-            public List<ApiConsumo> Items { get; private set; }
+            public List<ApiConsumo> Items { get;set; }
 
             public RestService()
             {

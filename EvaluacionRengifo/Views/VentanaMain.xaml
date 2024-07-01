@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sys="clr-namespace:System;assembly=netstandard"
+             x:Class="EvaluacionRengifo.Views.VentanaMain"
+             Title="VentanaMain">
+    <StackLayout BindingContext="{x:Static sys:DateTime.Now}"
+                         Spacing="25" Padding="30,0"
+                         VerticalOptions="Center" HorizontalOptions="Center">
+        <Label 
+            Text="Aplicacion Chuck Norris"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label Text="{Binding StringFormat='El chiste de la hora {0:T} es :'}" />
+        
+        <Button Text="Chiste de Chuck :D"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Clicked="OnButtonClicked" />
+    </StackLayout>
+</ContentPage>
